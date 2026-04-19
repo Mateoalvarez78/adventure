@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --bg-main: #070707;
+  --bg-alt: #110707;
+  --text-dark: #f7f7f7;
+  --text-muted: #dedede;
+  --text-light: #ffffff;
+  --accent: #ff2d2d;
+  --shadow-soft: 0 16px 38px rgba(0, 0, 0, 0.35);
+  --content-max: 1340px;
+  --content-width: 95%;
+  --font-body: "Manrope", sans-serif;
+  --font-heading: "Bebas Neue", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background: #050505;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+main {
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom,
+    #050505 0%,
+    #050505 20%,
+    #260404 40%,
+    #4e0606 52%,
+    #530505 60%,
+    #4e0606 70%,
+    #260404 80%,
+    #070707 86%,
+    #050505 100%
+  );
+}
+
+.section-space {
+  padding: clamp(3.5rem, 8vw, 6.2rem) 0;
+}
+
+.section-tag {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #ff8383;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-light);
+}
+
+a,
+button {
+  font-family: inherit;
+}
