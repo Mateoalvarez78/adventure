@@ -1,12 +1,12 @@
-import { useState } from 'react'
-import { FiMenu, FiX } from 'react-icons/fi'
-import './Navbar.css'
+import { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
+import "./Navbar.css";
 
 function Navbar({ links }) {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen((prev) => !prev)
-  const closeMenu = () => setIsOpen(false)
+  const toggleMenu = () => setIsOpen((prev) => !prev);
+  const closeMenu = () => setIsOpen(false);
 
   return (
     <header className="navbar">
@@ -25,7 +25,7 @@ function Navbar({ links }) {
           {isOpen ? <FiX /> : <FiMenu />}
         </button>
 
-        <nav className={`navbar__links ${isOpen ? 'is-open' : ''}`}>
+        <nav className={`navbar__links ${isOpen ? "is-open" : ""}`}>
           {links.map((link) => (
             <a
               key={link.href}
@@ -39,7 +39,7 @@ function Navbar({ links }) {
         </nav>
       </div>
     </header>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

@@ -1,4 +1,4 @@
-import './BenefitsSection.css'
+import "./BenefitsSection.css";
 
 function BenefitsSection({ content }) {
   return (
@@ -19,7 +19,7 @@ function BenefitsSection({ content }) {
         </ul>
       </div>
     </section>
-  )
+  );
 }
 
-export default BenefitsSection
+export default BenefitsSection;

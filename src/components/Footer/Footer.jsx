@@ -4,15 +4,15 @@ import {
   FaInstagram,
   FaTiktok,
   FaWhatsapp,
-} from 'react-icons/fa'
-import './Footer.css'
+} from "react-icons/fa";
+import "./Footer.css";
 
 const iconByLabel = {
   Instagram: FaInstagram,
   Facebook: FaFacebookF,
   WhatsApp: FaWhatsapp,
   TikTok: FaTiktok,
-}
+};
 
 function Footer({ info }) {
   return (
@@ -27,7 +27,7 @@ function Footer({ info }) {
 
         <div className="footer__socials" aria-label="Redes sociales">
           {info.socialLinks.map((item) => {
-            const Icon = iconByLabel[item.label]
+            const Icon = iconByLabel[item.label];
 
             return (
               <a
@@ -39,7 +39,7 @@ function Footer({ info }) {
               >
                 {Icon ? <Icon /> : item.label}
               </a>
-            )
+            );
           })}
         </div>
 
@@ -53,7 +53,7 @@ function Footer({ info }) {
       </div>
       <p className="footer__legal">{info.legalText}</p>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

@@ -1,9 +1,9 @@
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import './HeroSlider.css'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "./HeroSlider.css";
 
 function HeroSlider({ slides }) {
   return (
@@ -19,7 +19,7 @@ function HeroSlider({ slides }) {
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
             <article className="hero-slide">
-              {slide.type === 'video' ? (
+              {slide.type === "video" ? (
                 // Estructura lista para reemplazar imagenes por videos en cada slide.
                 <video
                   className="hero-slide__media"
@@ -51,7 +51,7 @@ function HeroSlider({ slides }) {
         ))}
       </Swiper>
     </section>
-  )
+  );
 }
 
-export default HeroSlider
+export default HeroSlider;

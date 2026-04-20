@@ -53,7 +53,7 @@
 }
 
 .benefits__content li::before {
-  content: '';
+  content: "";
   width: 0.58rem;
   height: 0.58rem;
   border-radius: 999px;

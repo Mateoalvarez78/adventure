@@ -1,4 +1,4 @@
-import './LocationSection.css'
+import "./LocationSection.css";
 
 function LocationSection({ info }) {
   return (
@@ -37,7 +37,7 @@ function LocationSection({ info }) {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default LocationSection
+export default LocationSection;

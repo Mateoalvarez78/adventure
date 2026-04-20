@@ -1,56 +1,57 @@
-import { useState } from 'react'
-import './ContactSection.css'
+import { useState } from "react";
+import "./ContactSection.css";
 
 const initialForm = {
-  name: '',
-  email: '',
-  phone: '',
-  message: '',
-}
+  name: "",
+  email: "",
+  phone: "",
+  message: "",
+};
 
 function ContactSection() {
-  const [formData, setFormData] = useState(initialForm)
-  const [errors, setErrors] = useState({})
-  const [status, setStatus] = useState('idle')
+  const [formData, setFormData] = useState(initialForm);
+  const [errors, setErrors] = useState({});
+  const [status, setStatus] = useState("idle");
 
   const handleChange = (event) => {
-    const { name, value } = event.target
+    const { name, value } = event.target;
 
     setFormData((prev) => ({
       ...prev,
       [name]: value,
-    }))
-  }
+    }));
+  };
 
   const validateForm = () => {
-    const nextErrors = {}
+    const nextErrors = {};
 
-    if (!formData.name.trim()) nextErrors.name = 'Ingresa tu nombre.'
+    if (!formData.name.trim()) nextErrors.name = "Ingresa tu nombre.";
     if (!formData.email.trim()) {
-      nextErrors.email = 'Ingresa tu email.'
+      nextErrors.email = "Ingresa tu email.";
     } else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(formData.email)) {
-      nextErrors.email = 'Ingresa un email valido.'
+      nextErrors.email = "Ingresa un email valido.";
     }
-    if (!formData.message.trim()) nextErrors.message = 'Escribe un mensaje breve.'
+    if (!formData.message.trim())
+      nextErrors.message = "Escribe un mensaje breve.";
 
-    return nextErrors
-  }
+    return nextErrors;
+  };
 
   const handleSubmit = (event) => {
-    event.preventDefault()
+    event.preventDefault();
 
-    const formErrors = validateForm()
-    setErrors(formErrors)
+    const formErrors = validateForm();
+    setErrors(formErrors);
 
     if (Object.keys(formErrors).length > 0) {
-      setStatus('error')
-      return
+      setStatus("error");
+      return;
     }
 
     // Base lista para conectar a backend o API de email en el futuro.
-    setStatus('success')
-    setFormData(initialForm)
-  }
+    setStatus("success");
+    setFormData(initialForm);
+  };
 
   return (
     <section id="contacto" className="contact section-space">
@@ -74,7 +75,9 @@ function ContactSection() {
               onChange={handleChange}
               placeholder="Tu nombre"
             />
-            {errors.name && <span className="contact__error">{errors.name}</span>}
+            {errors.name && (
+              <span className="contact__error">{errors.name}</span>
+            )}
           </label>
 
           <label>
@@ -118,12 +121,12 @@ function ContactSection() {
 
           <button type="submit">Enviar</button>
 
-          {status === 'success' && (
+          {status === "success" && (
             <p className="contact__status contact__status--success">
               Mensaje enviado. En breve te contactaremos.
             </p>
           )}
-          {status === 'error' && (
+          {status === "error" && (
             <p className="contact__status contact__status--error">
               Revisa los campos marcados antes de enviar.
             </p>
@@ -131,7 +134,7 @@ function ContactSection() {
         </form>
       </div>
     </section>
-  )
+  );
 }
 
-export default ContactSection
+export default ContactSection;

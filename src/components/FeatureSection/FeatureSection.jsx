@@ -1,10 +1,10 @@
-import './FeatureSection.css'
+import "./FeatureSection.css";
 
 function FeatureSection({ feature }) {
   return (
     <section
       id={feature.id}
-      className={`feature section-space ${feature.reverse ? 'is-reverse' : ''}`}
+      className={`feature section-space ${feature.reverse ? "is-reverse" : ""}`}
     >
       <div className="feature__media">
         <img src={feature.image} alt={feature.title} />
@@ -22,7 +22,7 @@ function FeatureSection({ feature }) {
         </ul>
       </div>
     </section>
-  )
+  );
 }
 
-export default FeatureSection
+export default FeatureSection;
