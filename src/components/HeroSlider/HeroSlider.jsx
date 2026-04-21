@@ -13,10 +13,10 @@ function HeroSlider({ slides }) {
         loop
         navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        autoplay={{ delay: 500000, disableOnInteraction: false }}
         className="hero-slider__swiper"
       >
-        {slides.map((slide) => (
+        {slides.map((slide, index) => (
           <SwiperSlide key={slide.id}>
             <article className="hero-slide">
               {slide.type === "video" ? (
@@ -31,7 +31,7 @@ function HeroSlider({ slides }) {
                 />
               ) : (
                 <div
-                  className="hero-slide__media hero-slide__media--image"
+                  className={`hero-slide__media hero-slide__media--image ${index === 0 ? "hero-slide__media--first" : ""}`}
                   style={{ backgroundImage: `url(${slide.media})` }}
                 />
               )}
@@ -39,7 +39,7 @@ function HeroSlider({ slides }) {
               <div className="hero-slide__overlay" />
 
               <div className="hero-slide__content">
-                <p className="hero-slide__eyebrow">Gimnasio Adventur</p>
+                <p className="hero-slide__eyebrow">Gimnasio Aventur</p>
                 <h1>{slide.title}</h1>
                 <p>{slide.subtitle}</p>
                 <a href={slide.ctaLink} className="hero-slide__cta">

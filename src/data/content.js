@@ -11,10 +11,9 @@ export const heroSlides = [
   {
     id: 1,
     type: "image",
-    media:
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2000&q=80",
+    media: "../src/assets/aventurBanner1.jpeg",
     title: "Tu mejor version empieza hoy",
-    subtitle: "Entrena con energia y constancia en Adventur.",
+    subtitle: "Entrena con energia y constancia en Aventur.",
     ctaLabel: "Sumate hoy",
     ctaLink: "#contacto",
   },
@@ -91,18 +90,15 @@ export const featureSections = [
 
 export const locationInfo = {
   title: "Donde estamos",
-  mapEmbedUrl:
-    "https://www.google.com/maps?q=Av.+Corrientes+1234,+Buenos+Aires&output=embed",
-  note: "Reemplazar mapEmbedUrl por la URL real de Google Maps cuando la tengas definida.",
-  address: "Av. Corrientes 1234",
-  city: "Buenos Aires, Argentina",
-  phone: "+54 11 5555-0000",
-  schedule: "Lunes a Sabado de 7:00 a 22:00",
+  address: "Ruta interbalnearia km 22.500",
+  city: "San Luis, Canelones",
+  phone: "097 137 024",
+  schedule: "Lunes a viernes de 08:00 a 22:00 - sábados de 08:00 a 12:00",
 };
 
 export const footerInfo = {
-  tagline: "Entrena, superate y vivi la experiencia Adventur.",
-  legalText: `© ${new Date().getFullYear()} Adventur. Todos los derechos reservados.`,
+  tagline: "Entrena, superate y vivi la experiencia Aventur.",
+  legalText: `© ${new Date().getFullYear()} Aventur. Todos los derechos reservados.`,
   socialLinks: [
     {
       label: "Instagram",

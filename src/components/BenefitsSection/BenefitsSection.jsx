@@ -4,7 +4,7 @@ function BenefitsSection({ content }) {
   return (
     <section id="beneficios" className="benefits section-space">
       <div className="benefits__media">
-        <img src={content.image} alt="Zona de entrenamiento en Adventur" />
+        <img src={content.image} alt="Zona de entrenamiento en Aventur" />
       </div>
 
       <div className="benefits__content">

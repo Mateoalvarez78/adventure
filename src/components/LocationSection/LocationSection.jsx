@@ -27,13 +27,10 @@ function LocationSection({ info }) {
 
         <div className="location__map-wrapper">
           <iframe
-            className="location__map"
-            src={info.mapEmbedUrl}
-            title="Mapa de ubicacion Adventur"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            allowFullScreen
-          />
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.522918757937!2d-55.5800151!3d-34.7676089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959ffdcfd4092d23%3A0xe8203a5966fc26f8!2sGimnasio%20AVENTUR!5e0!3m2!1ses!2suy!4v1776729161232!5m2!1ses!2suy"
+            width="100%"
+            height="100%"
+          ></iframe>
         </div>
       </div>
     </section>

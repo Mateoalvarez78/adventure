@@ -12,7 +12,7 @@ function Navbar({ links }) {
     <header className="navbar">
       <div className="navbar__container">
         <a className="navbar__brand" href="#inicio" onClick={closeMenu}>
-          Adventur
+          Aventur
         </a>
 
         <button

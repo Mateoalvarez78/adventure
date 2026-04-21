@@ -20,7 +20,7 @@ function Footer({ info }) {
       <div className="footer__container">
         <div>
           <a className="footer__brand" href="#inicio">
-            Adventur
+            Aventur
           </a>
           <p>{info.tagline}</p>
         </div>

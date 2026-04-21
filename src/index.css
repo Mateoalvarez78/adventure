@@ -1,19 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap");
 
+/* ── Design tokens ───────────────────────────────────── */
 :root {
-  --bg-main: #070707;
-  --bg-alt: #110707;
-  --text-dark: #f7f7f7;
-  --text-muted: #dedede;
+  /* backgrounds */
+  --bg-main: #0f0f0f;
+  --bg-alt: #151515;
+  --bg-card: #1a1a1a;
+
+  /* text */
   --text-light: #ffffff;
-  --accent: #ff2d2d;
-  --shadow-soft: 0 16px 38px rgba(0, 0, 0, 0.35);
+  --text-muted: #b3b3b3;
+  --text-subtle: #888888;
+
+  /* accent / red */
+  --accent: #e50914;
+  --accent-hover: #ff1f1f;
+  --accent-dark: #b30000;
+
+  /* borders */
+  --border-subtle: rgba(255, 0, 0, 0.15);
+  --border-mid: rgba(255, 0, 0, 0.28);
+
+  /* shadows */
+  --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.55);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.45);
+  --glow-red: 0 0 18px rgba(229, 9, 20, 0.45);
+
+  /* layout */
   --content-max: 1340px;
   --content-width: 95%;
+
+  /* typography */
   --font-body: "Manrope", sans-serif;
   --font-heading: "Bebas Neue", sans-serif;
+
+  /* transitions */
+  --ease: 0.25s ease;
+  --ease-fast: 0.18s ease;
 }
 
+/* ── Reset ───────────────────────────────────────────── */
 * {
   box-sizing: border-box;
 }
@@ -25,8 +51,10 @@ html {
 body {
   margin: 0;
   font-family: var(--font-body);
-  color: var(--text-dark);
-  background: #050505;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  background: var(--bg-main);
 }
 
 #root {
@@ -35,38 +63,56 @@ body {
 
 main {
   overflow: hidden;
-  background: linear-gradient(
-    to bottom,
-    #050505 0%,
-    #050505 20%,
-    #260404 40%,
-    #4e0606 52%,
-    #530505 60%,
-    #4e0606 70%,
-    #260404 80%,
-    #070707 86%,
-    #050505 100%
-  );
 }
 
+/* ── Shared utilities ────────────────────────────────── */
 .section-space {
-  padding: clamp(3.5rem, 8vw, 6.2rem) 0;
+  padding: clamp(4rem, 8vw, 6.5rem) 0;
 }
 
+/* Alternating section backgrounds */
+.section-dark {
+  background: var(--bg-main);
+}
+.section-alt {
+  background: var(--bg-alt);
+}
+
+/* Section label above headings */
 .section-tag {
-  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
-  color: #ff8383;
-  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  font-size: 0.78rem;
   font-weight: 700;
 }
 
-h2 {
+.section-tag::before {
+  content: "";
+  display: block;
+  width: 1.8rem;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+h1,
+h2,
+h3 {
   font-family: var(--font-heading);
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--text-light);
+  line-height: 1.05;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 a,
