@@ -23,17 +23,20 @@
 
 /* Logo */
 .navbar__brand {
-  font-family: var(--font-heading);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-light);
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  font-size: 1.6rem;
-  transition: color var(--ease-fast);
+  transition: transform var(--ease-fast);
 }
 
 .navbar__brand:hover {
-  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.navbar__logo {
+  display: block;
+  height: 4rem;
+  width: auto;
 }
 
 /* Hamburger */
@@ -133,5 +136,9 @@
   }
   .navbar__link::after {
     display: none;
+  }
+
+  .navbar__logo {
+    height: 38px;
   }
 }

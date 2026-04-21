@@ -58,15 +58,15 @@ export const featureSections = [
   {
     id: "musculacion",
     title: "Sala de musculacion",
-    description:
-      "Un espacio completo para entrenar fuerza con maquinas, peso libre y seguimiento personalizado.",
+    description: "Fuerza, disciplina y progreso a tu ritmo.",
     image:
       "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?auto=format&fit=crop&w=1400&q=80",
     items: [
-      "Entrenamiento de fuerza",
-      "Rutinas personalizadas",
-      "Maquinas y peso libre",
-      "Progreso fisico medible",
+      "Desarrollo de fuerza y masa muscular de forma segura",
+      "Rutinas personalizadas según tus objetivos",
+      "Equipamiento moderno y completo",
+      "Mejora de postura y control corporal",
+      "Ambiente enfocado y motivador",
     ],
     reverse: true,
   },
@@ -78,11 +78,11 @@ export const featureSections = [
     image:
       "https://images.unsplash.com/photo-1521805103424-d8f8430e8933?auto=format&fit=crop&w=1400&q=80",
     items: [
-      "Mejora de resistencia",
-      "Entrenamiento funcional",
-      "Clases dinamicas",
-      "Trabajo en comunidad",
-      "Superacion personal",
+      "Mejora tu resistencia física y mental",
+      "Aumento de fuerza, velocidad y agilidad",
+      "Rutinas dinámicas que evitan la monotonía",
+      "Mejora de coordinación y movilidad",
+      "Superación personal constante",
     ],
     reverse: false,
   },

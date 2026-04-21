@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import navbarLogo from "../../assets/imagenaventur.png";
 import "./Navbar.css";
 
 function Navbar({ links }) {
@@ -12,7 +13,7 @@ function Navbar({ links }) {
     <header className="navbar">
       <div className="navbar__container">
         <a className="navbar__brand" href="#inicio" onClick={closeMenu}>
-          Aventur
+          <img className="navbar__logo" src={navbarLogo} alt="Aventur" />
         </a>
 
         <button
