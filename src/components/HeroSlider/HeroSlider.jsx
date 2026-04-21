@@ -13,7 +13,7 @@ function HeroSlider({ slides }) {
         loop
         navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 500000, disableOnInteraction: false }}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
         className="hero-slider__swiper"
       >
         {slides.map((slide, index) => (
