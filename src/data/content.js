@@ -11,7 +11,7 @@ export const heroSlides = [
   {
     id: 1,
     type: "image",
-    media: "../src/assets/aventurBanner1.jpeg",
+    media: "../public_assets/aventurBanner1.jpeg",
     title: "Tu mejor version empieza hoy",
     subtitle: "Entrena con energia y constancia en Aventur.",
     ctaLabel: "Sumate hoy",
