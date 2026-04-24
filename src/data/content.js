@@ -10,6 +10,21 @@ export const navLinks = [
 export const heroSlides = [
   {
     id: 1,
+    type: "promo",
+    media:
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2000&q=80",
+    title: "PROMO ANIMATE 2X1",
+    description: "VENÍ CON UN AMIGO Y ABONAN MEDIA CUOTA CADA UNO",
+    subtitle: "SOLO PARA SOCIOS NUEVOS",
+    price: "$800 C/U",
+    validity: "VÁLIDO HASTA 15/5",
+    paymentMethods: ["CON TARJETA", "EN EFECTIVO", "TRANSFERENCIA"],
+    contact: "GIMNASIO AVENTUR 097 137 024",
+    address: "Ruta interbalnearia y calle La Paz e Independencia",
+    location: "AL LADO DE DAC SAN LUIS",
+  },
+  {
+    id: 2,
     type: "image",
     media: "../public_assets/aventurBanner1.jpeg",
     title: "Tu mejor version empieza hoy",
@@ -18,7 +33,7 @@ export const heroSlides = [
     ctaLink: "#contacto",
   },
   {
-    id: 2,
+    id: 3,
     type: "image",
     media:
       "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=2000&q=80",
@@ -28,7 +43,7 @@ export const heroSlides = [
     ctaLink: "#beneficios",
   },
   {
-    id: 3,
+    id: 4,
     type: "image",
     media:
       "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=2000&q=80",
@@ -63,7 +78,7 @@ export const featureSections = [
       "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?auto=format&fit=crop&w=1400&q=80",
     items: [
       "Desarrollo de fuerza y masa muscular de forma segura",
-      "Rutinas personalizadas según tus objetivos",
+      "Zona de cardio para complementar tu entrenamiento",
       "Equipamiento moderno y completo",
       "Mejora de postura y control corporal",
       "Ambiente enfocado y motivador",
@@ -90,7 +105,7 @@ export const featureSections = [
 
 export const locationInfo = {
   title: "Donde estamos",
-  address: "Ruta interbalnearia km 22.500",
+  address: "Ruta interbalnearia y calle La Paz e Independencia",
   city: "San Luis, Canelones",
   phone: "097 137 024",
   schedule: "Lunes a viernes de 08:00 a 22:00 - sábados de 08:00 a 12:00",
